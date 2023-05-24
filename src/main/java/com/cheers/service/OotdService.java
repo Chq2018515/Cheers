@@ -1,4 +1,4 @@
 package com.cheers.service;
 
-public interface UserService {
+public interface OotdService {
 }
