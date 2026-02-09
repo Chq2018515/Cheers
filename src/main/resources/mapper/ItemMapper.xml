@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cheers.mapper.ItemMapper">
+
+    <resultMap id="BaseResultMap" type="com.cheers.model.entity.Item">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="desc" column="desc" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="SMALLINT"/>
+            <result property="picUrl" column="pic_url" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="DOUBLE"/>
+            <result property="freq" column="freq" jdbcType="OTHER"/>
+            <result property="buyAt" column="buy_at" jdbcType="TIMESTAMP"/>
+            <result property="extra1" column="extra1" jdbcType="VARCHAR"/>
+            <result property="extra2" column="extra2" jdbcType="VARCHAR"/>
+            <result property="extra3" column="extra3" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,desc,type,
+        pic_url,price,freq,
+        buy_at,extra1,extra2,
+        extra3
+    </sql>
+</mapper>
