@@ -1,47 +1,30 @@
-package com.cheers.model.entity;
+package com.cheers.model.vo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * 单品
- * @TableName item
- */
 @TableName(value ="item")
-@Data
-@EqualsAndHashCode(callSuper = false)
-@AllArgsConstructor
-@NoArgsConstructor
-public class Item implements Serializable {
+public class ItemVO implements Serializable {
     /**
      * 
      */
     @TableId(type = IdType.AUTO)
-    private Integer id;
+    private Object id;
 
     /**
      * 描述
      */
-    private String description;
+    private String desc;
 
     /**
      * 类型
      */
     private Integer type;
-
-    /**
-     * 图片URL
-     */
-    private String picUrl;
 
     /**
      * 价格
@@ -57,21 +40,6 @@ public class Item implements Serializable {
      * 购买时间
      */
     private Date buyAt;
-
-    /**
-     * 备用1
-     */
-    private String extra1;
-
-    /**
-     * 备用2
-     */
-    private String extra2;
-
-    /**
-     * 备用3
-     */
-    private String extra3;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

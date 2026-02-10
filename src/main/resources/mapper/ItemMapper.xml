@@ -6,7 +6,7 @@
 
     <resultMap id="BaseResultMap" type="com.cheers.model.entity.Item">
             <id property="id" column="id" jdbcType="OTHER"/>
-            <result property="desc" column="desc" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
             <result property="type" column="type" jdbcType="SMALLINT"/>
             <result property="picUrl" column="pic_url" jdbcType="VARCHAR"/>
             <result property="price" column="price" jdbcType="DOUBLE"/>
@@ -18,7 +18,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,desc,type,
+        id,description,type,
         pic_url,price,freq,
         buy_at,extra1,extra2,
         extra3

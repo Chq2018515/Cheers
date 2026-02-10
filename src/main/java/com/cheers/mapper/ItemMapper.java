@@ -2,6 +2,7 @@ package com.cheers.mapper;
 
 import com.cheers.model.entity.Item;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author iris
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2026-02-09 15:15:59
 * @Entity com.cheers.model.entity.Item
 */
+@Mapper
 public interface ItemMapper extends BaseMapper<Item> {
 
 }
