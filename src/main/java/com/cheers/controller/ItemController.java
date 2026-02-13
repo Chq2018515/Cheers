@@ -6,7 +6,6 @@ import com.cheers.model.dto.ItemQueryDTO;
 import com.cheers.model.vo.ItemVO;
 import com.cheers.service.ItemService;
 import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
