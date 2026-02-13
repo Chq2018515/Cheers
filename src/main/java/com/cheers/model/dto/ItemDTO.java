@@ -1,6 +1,5 @@
 package com.cheers.model.dto;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -38,7 +37,7 @@ public class ItemDTO {
     /**
      * 穿搭频率
      */
-    private Object freq;
+    private Integer freq;
 
     /**
      * 购买时间

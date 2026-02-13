@@ -14,6 +14,7 @@ import java.util.List;
 @Validated
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/item/v1")
 public class ItemController {
     private final ItemService service;
@@ -23,7 +24,7 @@ public class ItemController {
         return service.selectById(id);
     }
 
-    @GetMapping("/list")
+    @PostMapping("/list")
     public List<ItemVO> list(@RequestBody ItemQueryDTO queryDTO) {
         return service.selectByCondition(queryDTO);
     }
